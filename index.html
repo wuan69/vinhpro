@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY BALLS | Professional Basketball Coach</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional basketball coaching. Elevate your game with customized training programs, expert guidance, and proven results. Book a trial class today.">
+    <meta name="keywords" content="basketball coach, basketball training, pro basketball, BALL, skills trainer, basketball lessons">
+    <meta name="author" content="HAPPY BALLS">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://HAPPYBALL.netlify.app/">
+    <meta property="og:title" content="HAPPY BALLS | Professional Basketball Coach">
+    <meta property="og:description" content="Elevate your game with customized training programs and expert guidance.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1200&auto=format&fit=crop">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://HAPPYBALL.netlify.app/">
+    <meta property="twitter:title" content="HAPPY BALLS | Professional Basketball Coach">
+    <meta property="twitter:description" content="Elevate your game with customized training programs and expert guidance.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1200&auto=format&fit=crop">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>">
+    
+    <!-- Assets -->
+    <link rel="stylesheet" href="./src/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="antialiased font-sans bg-[#050505] text-[#F8FAFC]">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full z-40 transition-all duration-300 bg-transparent py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="/" class="text-2xl font-black italic tracking-tighter flex items-center gap-2">
+                <i data-lucide="dribbble" class="w-8 h-8 text-[#F97316]"></i>
+                HAPPY<span class="text-[#F97316]">BALL</span>
+            </a>
+            
+            <div class="hidden md:flex gap-8 items-center font-medium">
+                <a href="/" class="hover:text-[#F97316] transition-colors">Home</a>
+                <a href="#services" class="hover:text-[#F97316] transition-colors">Programs</a>
+                <a href="about.html" class="hover:text-[#F97316] transition-colors">About Me</a>
+                <a href="#contact" class="hover:text-[#F97316] transition-colors">Contact</a>
+                <button class="open-modal-btn btn-primary ml-4">Book Trial</button>
+            </div>
+            
+            <button id="mobile-menu-btn" class="md:hidden text-white">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass mt-4 mx-4 rounded-xl flex flex-col gap-4 p-6 absolute top-full left-0 right-0">
+            <a href="/" class="font-medium hover:text-[#F97316]">Home</a>
+            <a href="#services" class="font-medium hover:text-[#F97316]">Programs</a>
+            <a href="about.html" class="font-medium hover:text-[#F97316]">About Me</a>
+            <button class="open-modal-btn btn-primary w-full mt-4">Book Trial</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20">
+        <!-- Background -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=2000&auto=format&fit=crop" alt="Basketball Court" class="w-full h-full object-cover opacity-40" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 w-full relative z-10 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left" data-aos="fade-right">
+                <h2 class="text-xl md:text-2xl font-semibold text-[#F97316] mb-4 uppercase tracking-widest">Professional Basketball Coach</h2>
+                <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tight leading-[1.1] mb-6">
+                    Elevate Your <br>
+                    <span class="text-gradient">Game To</span> <br>
+                    <span class="text-gradient-orange">The Next Level</span>
+                </h1>
+                <p class="text-lg text-gray-400 mb-10 max-w-xl mx-auto md:mx-0">
+                    Hi, I'm Coach Vinh Nguyễn. I specialize in HAPPY skill development, physical conditioning, and basketball IQ. Whether you're a beginner or a pro, I will unlock your full potential.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <button class="open-modal-btn btn-primary text-lg px-8 py-4">Book a Trial Class</button>
+                    <a href="about.html" class="btn-outline text-lg px-8 py-4">About Me</a>
+                </div>
+            </div>
+            
+            <div class="flex-1 relative" data-aos="fade-up" data-aos-delay="200">
+                <a href="about.html" class="block relative group cursor-pointer">
+                    <div class="absolute inset-0 bg-[#F97316] blur-[100px] opacity-20 rounded-full group-hover:opacity-40 transition-opacity duration-500"></div>
+                    <img src="./img/vinhPro.png" alt="Coach Vinh Nguyễn" class="relative z-10 w-full max-w-md mx-auto rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500 border border-white/10" loading="lazy">
+                    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 glass-card px-6 py-3 rounded-full flex items-center gap-3 z-20 whitespace-nowrap">
+                        <span class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span>
+                        <span class="font-medium text-sm">Accepting New Students</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Training Programs -->
+    <section id="services" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-[#F97316] font-bold tracking-widest uppercase mb-2">My Services</h2>
+                <h3 class="text-4xl md:text-5xl font-black uppercase">Training Programs</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Program 1 -->
+                <div class="glass-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-[#F97316]/20 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="target" class="w-8 h-8 text-[#F97316]"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">1-on-1 HAPPY</h4>
+                    <p class="text-gray-400 mb-6 line-clamp-3">Personalized training focused on your specific weaknesses. Intensive skill breakdown, shooting mechanics, and game-situation reads.</p>
+                    <ul class="text-sm text-gray-300 space-y-2 mb-8">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#F97316]"></i> Custom Workout Plan</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#F97316]"></i> Video Analysis</li>
+                    </ul>
+                </div>
+                
+                <!-- Program 2 -->
+                <div class="glass-card p-8 rounded-2xl border-[#F97316]/30 relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 right-0 bg-[#F97316] text-xs font-bold px-4 py-1 rounded-bl-lg uppercase">Popular</div>
+                    <div class="w-16 h-16 bg-[#F97316]/20 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="users" class="w-8 h-8 text-[#F97316]"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Group Clinics</h4>
+                    <p class="text-gray-400 mb-6 line-clamp-3">Train with peers of similar skill level. Focus on competitive drills, team spacing, pick-and-roll reads, and game-speed conditioning.</p>
+                    <ul class="text-sm text-gray-300 space-y-2 mb-8">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#F97316]"></i> Max 6 Players</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#F97316]"></i> Scrimmage Time</li>
+                    </ul>
+                </div>
+                
+                <!-- Program 3 -->
+                <div class="glass-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-[#F97316]/20 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="activity" class="w-8 h-8 text-[#F97316]"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Strength & Agility</h4>
+                    <p class="text-gray-400 mb-6 line-clamp-3">Basketball-specific athletic development. Increase your vertical, lateral quickness, core stability, and overall explosiveness.</p>
+                    <ul class="text-sm text-gray-300 space-y-2 mb-8">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#F97316]"></i> Plyometrics</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#F97316]"></i> Injury Prevention</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages -->
+    <section class="py-24 bg-[#0A0A0A] relative border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-[#F97316] font-bold tracking-widest uppercase mb-2">Why Choose Me</h2>
+                    <h3 class="text-4xl md:text-5xl font-black uppercase mb-8">The HAPPY Advantage</h3>
+                    
+                    <div class="space-y-8">
+                        <div class="flex gap-4">
+                            <div class="shrink-0 w-12 h-12 rounded-full bg-[#1A1A1A] flex items-center justify-center border border-[#F97316]/20">
+                                <i data-lucide="award" class="text-[#F97316] w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Pro-Level Experience</h4>
+                                <p class="text-gray-400">Over 10 years playing and coaching at the highest competitive levels.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="shrink-0 w-12 h-12 rounded-full bg-[#1A1A1A] flex items-center justify-center border border-[#F97316]/20">
+                                <i data-lucide="brain" class="text-[#F97316] w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Basketball IQ Focus</h4>
+                                <p class="text-gray-400">We don't just do drills. We teach you how to read the game and make split-second decisions.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="shrink-0 w-12 h-12 rounded-full bg-[#1A1A1A] flex items-center justify-center border border-[#F97316]/20">
+                                <i data-lucide="trending-up" class="text-[#F97316] w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Proven Results</h4>
+                                <p class="text-gray-400">Dozens of athletes moved on to play college and professional basketball under my guidance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative" data-aos="zoom-in">
+                    <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?q=80&w=800&auto=format&fit=crop" alt="Training Session" class="rounded-2xl shadow-2xl" loading="lazy">
+                    
+                    <div class="absolute -bottom-8 -left-8 glass-card p-6 rounded-2xl flex items-center gap-4 hidden sm:flex">
+                        <div class="text-4xl font-black text-[#F97316]">500+</div>
+                        <div class="text-sm font-medium uppercase tracking-wider text-gray-300 leading-tight">Athletes<br>Trained</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-[#F97316] font-bold tracking-widest uppercase mb-2">Testimonials</h2>
+                <h3 class="text-4xl md:text-5xl font-black uppercase">Student Results</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center gap-2 mb-6 text-[#F97316]">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                    <p class="text-lg italic text-gray-300 mb-6">"Coach Vinh Nguyễn completely transformed my shot mechanics and confidence. I went from a bench player to a starter in one summer."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gray-800 rounded-full overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop" alt="Student" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h5 class="font-bold">David Chen</h5>
+                            <span class="text-xs text-[#F97316] uppercase tracking-wider">Varsity Point Guard</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center gap-2 mb-6 text-[#F97316]">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                    <p class="text-lg italic text-gray-300 mb-6">"The attention to detail is unmatched. He broke down my game film and showed me reads I never even knew existed."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gray-800 rounded-full overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=150&auto=format&fit=crop" alt="Student" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h5 class="font-bold">Michael T.</h5>
+                            <span class="text-xs text-[#F97316] uppercase tracking-wider">College Athlete</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Form (Footer) -->
+    <section id="contact" class="py-24 bg-[#0A0A0A] border-t border-white/5 relative">
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <div class="glass-card p-8 md:p-12 rounded-3xl text-center" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-black uppercase mb-4">Ready to put in the work?</h2>
+                <p class="text-gray-400 mb-8 max-w-xl mx-auto">Leave your details below for a free consultation. Let's discuss your goals and how we can achieve them.</p>
+                
+                <form id="consultation-form" class="space-y-4 max-w-xl mx-auto text-left">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-1 ml-1">Full Name *</label>
+                            <input type="text" name="name" required class="input-field" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-1 ml-1">Phone Number *</label>
+                            <input type="tel" name="phone" required class="input-field" placeholder="0912345678">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm text-gray-400 mb-1 ml-1">Training Goal</label>
+                        <select class="input-field appearance-none">
+                            <option class="bg-gray-900 text-white">Improve Shooting</option>
+                            <option class="bg-gray-900 text-white">Ball Handling & Playmaking</option>
+                            <option class="bg-gray-900 text-white">Athleticism & Conditioning</option>
+                            <option class="bg-gray-900 text-white">Overall Game Development</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary w-full py-4 mt-4 text-lg">Send Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-black py-8 border-t border-white/10 text-center text-sm text-gray-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="font-black italic tracking-tighter text-white flex items-center gap-1">
+                <i data-lucide="dribbble" class="w-5 h-5 text-[#F97316]"></i>
+                HAPPY<span class="text-[#F97316]">BALL</span>
+            </div>
+            <p>&copy; Nguyễn Vinh Trainning . All rights reserved.</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-white transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Floating Action Button -->
+    <button class="fab open-modal-btn btn-primary shadow-2xl flex items-center gap-2 rounded-full px-6 py-4">
+        <i data-lucide="calendar-plus" class="w-5 h-5"></i>
+        <span>Register Now</span>
+    </button>
+
+    <!-- Modal Overlay -->
+    <div id="modal-overlay" class="fixed inset-0 bg-black/80 z-50 modal-overlay pointer-events-none hidden" aria-hidden="true"></div>
+
+    <!-- Registration Modal -->
+    <div id="register-modal" class="fixed inset-0 z-[60] hidden items-center justify-center p-4 sm:p-6 overflow-y-auto">
+        <div id="modal-content" class="bg-[#0F172A] border border-[#1E293B] rounded-3xl w-full max-w-2xl relative shadow-2xl modal-content my-auto">
+            
+            <!-- Modal Header -->
+            <div class="flex justify-between items-center p-6 border-b border-white/5 relative overflow-hidden rounded-t-3xl">
+                <div class="absolute inset-0 bg-gradient-to-r from-[#F97316]/20 to-transparent"></div>
+                <h3 class="text-2xl font-black uppercase relative z-10">Book Trial Class</h3>
+                <button id="close-modal-btn" class="text-gray-400 hover:text-white transition-colors relative z-10 bg-black/20 p-2 rounded-full">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="p-6 md:p-8">
+                <form id="modal-form" class="space-y-5">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-1">Name *</label>
+                            <input type="text" name="name" required class="input-field" placeholder="Full Name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-1">Phone Number *</label>
+                            <input type="tel" name="phone" required class="input-field" placeholder="e.g. 0912345678">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-1">Age</label>
+                            <input type="number" name="age" class="input-field" placeholder="e.g. 16" min="5" max="30">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-1">Experience Level</label>
+                            <select name="experience" class="input-field appearance-none bg-[#1a2235]">
+                                <option class="bg-gray-900 text-white" value="Beginner">Beginner</option>
+                                <option class="bg-gray-900 text-white" value="Intermediate">Intermediate (School Team)</option>
+                                <option class="bg-gray-900 text-white" value="Advanced">Advanced (Club / Varsity)</option>
+                                <option class="bg-gray-900 text-white" value="Pro">Pro / Semi-Pro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-1">Primary Goal</label>
+                            <input type="text" name="goal" class="input-field" placeholder="e.g. Make varsity team">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-1">Preferred Time</label>
+                            <!-- đổi input tùy -->
+                            <select name="time" class="input-field appearance-none bg-[#1a2235]">
+                                <option class="bg-gray-900 text-white" value="Morning">Morning (6AM - 10AM)</option>
+                                <option class="bg-gray-900 text-white" value="Afternoon">Afternoon (2PM - 5PM)</option>
+                                <option class="bg-gray-900 text-white" value="Evening">Evening (6PM - 9PM)</option>
+                                <option class="bg-gray-900 text-white" value="Weekend">Weekends Only</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-1">Message (Optional)</label>
+                        <textarea name="message" rows="3" class="input-field resize-none" placeholder="Any injuries or specific things I should know?"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary w-full py-4 text-lg font-bold mt-2">
+                        Submit Registration
+                    </button>
+                    <p class="text-xs text-center text-gray-500 mt-4"><i data-lucide="lock" class="w-3 h-3 inline mr-1"></i> Your information is secure. No spam.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>

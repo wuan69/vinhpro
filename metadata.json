@@ -1,0 +1,6 @@
+{
+  "name": "Elite Hoops - Pro Basketball Coach Portfolio",
+  "description": "A premium, modern portfolio website for a professional basketball coach. Built with HTML5, Tailwind CSS, Vanilla JS, and Netlify Functions for lead capture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
