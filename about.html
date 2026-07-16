@@ -18,7 +18,8 @@
     
     <!-- Assets -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>">
-    <link rel="stylesheet" href="/src/index.css">
+    <!-- Assets -->
+    <link rel="stylesheet" href="./src/index.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -33,7 +34,7 @@
             </a>
             
             <div class="hidden md:flex gap-8 items-center font-medium">
-                <a href="/" class="hover:text-[#F97316] transition-colors">Home</a>
+                <a href="index.html" class="hover:text-[#F97316] transition-colors">Home</a>
                 <a href="/#services" class="hover:text-[#F97316] transition-colors">Programs</a>
                 <a href="about.html" class="text-[#F97316] transition-colors">About Me</a>
                 <a href="#contact" class="hover:text-[#F97316] transition-colors">Contact</a>
@@ -239,11 +240,11 @@
                     </div>
                     <div>
                         <label class="block text-sm text-gray-400 mb-1 ml-1">Training Goal</label>
-                        <select name="goal" class="input-field appearance-none">
-                            <option value="Improve Shooting">Improve Shooting</option>
-                            <option value="Ball Handling">Ball Handling & Playmaking</option>
-                            <option value="Athleticism">Athleticism & Conditioning</option>
-                            <option value="Overall Game">Overall Game Development</option>
+                        <select class="input-field appearance-none">
+                            <option class="bg-gray-900 text-white">Improve Shooting</option>
+                            <option class="bg-gray-900 text-white">Ball Handling & Playmaking</option>
+                            <option class="bg-gray-900 text-white">Athleticism & Conditioning</option>
+                            <option class="bg-gray-900 text-white">Overall Game Development</option>
                         </select>
                     </div>
                     <button type="submit" class="btn-primary w-full py-4 mt-4 text-lg">Send Request</button>
